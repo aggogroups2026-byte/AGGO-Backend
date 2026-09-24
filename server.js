@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const MONGO_URI = "mongodb+srv://aggogroups2026_db_user:<db_password>@cluster0.mzohecd.mongodb.net/?appName=Cluster0";
+const MONGO_URI = process.env.MONGO_URI;
 
 mongoose.connect(MONGO_URI)
 .then(() => console.log('MongoDB Connected Successfully!'))
