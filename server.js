@@ -6,8 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// INGA UNGA MONGODB CONNECTION STRING-AI PASTE PANRUNGA (Username & Password-oda)
-const MONGO_URI = "mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority";
+const MONGO_URI = "mongodb+srv://aggogroups2026_db_user:<db_password>@cluster0.mzohecd.mongodb.net/?appName=Cluster0";
 
 mongoose.connect(MONGO_URI)
 .then(() => console.log('MongoDB Connected Successfully!'))
