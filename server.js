@@ -16,7 +16,7 @@ const TransactionSchema = new mongoose.Schema({
     transactor: String,
     category: String,
     amount: Number,
-    description: String,
+    upi: String,
     date: String,
     time: String
 });
